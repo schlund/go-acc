@@ -1,6 +1,6 @@
 language: go
 
-go_import_path: github.com/ory/go-acc
+go_import_path: github.com/schlund/go-acc
 
 go:
   - 1.8
@@ -13,6 +13,6 @@ install:
 
 script:
   - go install .
-  - go-acc github.com/ory/go-acc
-  - go-acc github.com/ory/go-acc/...
-  - go-acc $(go list github.com/ory/go-acc/...)
+  - go-acc github.com/schlund/go-acc
+  - go-acc github.com/schlund/go-acc/...
+  - go-acc $(go list github.com/schlund/go-acc/...)
